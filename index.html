@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>多子棋游戏</title>
+</head>
+<body>
+	<div id="gamebox"></div>
+	<script type="text/javascript" src="script/jquery.1.8.2.min.js"></script>
+    <script type="text/javascript" src="script/jquery.game.0.1.min.js"></script>
+	<script type="text/javascript">
+		$("#gamebox").wzGame({
+			wzNum          : 5,//设置多少子连成串可以赢
+			zHang          : 20,//几行
+			zLie           : 20,//几列
+		}).data('_wzGame');
+	</script>
+</body>
+</html>
